@@ -56,7 +56,7 @@ public class Conta {
 		this.saldo = saldo;
 	}
 	
-	public boolean sacar(float valor) {
+	public boolean sacar(float valor) {// Foi usado para a conta Corrente/ podera ser usado para a conta polpanca 
 		if(this.getSaldo() < valor) {
 			System.out.println("\nSaldo insuficiente");
 			return false;
@@ -69,7 +69,7 @@ public class Conta {
 		this.setSaldo(this.getSaldo() + valor);
 	}
 	
-	public void vizualizar() {
+	public void visualizar() {
 		
 		String tipo = "";
 		
